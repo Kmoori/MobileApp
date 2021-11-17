@@ -2,32 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class AppController : MonoBehaviour
 {
-    public Button buttonPrefab; 
-    public GameObject layoutGroup;
-	public static List<GameObject> madeIt = new List<GameObject>();
+	public List<GameObject> players = new List<GameObject>();
+	private int i;
 
+    private void Start()
+    {
+		i = PlayerPrefs.GetInt("i");
 
-	public void ToDo()
-	{
-
-	}
-
+		for (int j = 0; j < i; j++)
+        {
+			players[j].SetActive(true);
+		}
+    }
 
     public void Add()
 	{
-		var toDo = Instantiate(buttonPrefab, transform.position, Quaternion.identity);
-		toDo.transform.SetParent(layoutGroup.transform, false);
-		
+        if (i < 4)
+        {
+			players[i].SetActive(true);
+			i++;
+			PlayerPrefs.SetInt("i", i);
+			PlayerPrefs.Save();
+        }
+        else
+        {
+			Debug.Log("Nincs több játékos");
+        }
 	}
 
 	public void Delete()
 	{
-		for (int i = 0; i < madeIt.Count; i++)
+		if (i > 0)
 		{
-			Destroy(madeIt[i]);
+			i--;
+			players[i].SetActive(false);
+			PlayerPrefs.SetInt("i", i);
+			PlayerPrefs.Save();
+		}
+		else
+		{
+			Debug.Log("Nincs több törölhetõ játékos");
 		}
 	}
 
