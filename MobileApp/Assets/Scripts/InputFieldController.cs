@@ -15,15 +15,6 @@ public class InputFieldController : MonoBehaviour
         inputField.text = PlayerPrefs.GetString(id);
     }
 
-    private void Update()
-    {
-        if (!transform.parent.gameObject.activeSelf)
-        {
-            PlayerPrefs.DeleteKey(id);
-        }
-        Debug.Log(transform.parent.gameObject.activeSelf);
-    }
-
     public void ReadStringInput(string s)
     {
         input = inputField.text;

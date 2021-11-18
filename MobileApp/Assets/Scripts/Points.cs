@@ -18,11 +18,6 @@ public class Points : MonoBehaviour
     void Update()
     {
         allPointsText.text = "All points: " + PlayerPrefs.GetInt(pointToAddPrefs);
-
-        if (!transform.parent.gameObject.activeSelf)
-        {
-            PlayerPrefs.DeleteKey("AllPoints");
-        }
     }
 
     public void plusPoint()

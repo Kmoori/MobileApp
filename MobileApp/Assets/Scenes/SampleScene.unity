@@ -2511,6 +2511,16 @@ MonoBehaviour:
   - {fileID: 993289634}
   - {fileID: 918812181}
   - {fileID: 1501713625}
+  playersInputField:
+  - {fileID: 33203241}
+  - {fileID: 1945737130}
+  - {fileID: 1088920456}
+  - {fileID: 1694698489}
+  playersPointsInputField:
+  - {fileID: 826913548}
+  - {fileID: 199722817}
+  - {fileID: 414427026}
+  - {fileID: 562109121}
 --- !u!1 &376294531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,7 +4467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 33203241}
-  id: player1
+  id: Player0
 --- !u!114 &770080598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4471,7 +4481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPointsText: {fileID: 1427728826}
-  pointToAddPrefs: 1
+  pointToAddPrefs: 0
   inputField: {fileID: 826913548}
 --- !u!1 &796246936
 GameObject:
@@ -5574,7 +5584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPointsText: {fileID: 725080849}
-  pointToAddPrefs: 3
+  pointToAddPrefs: 2
   inputField: {fileID: 414427026}
 --- !u!1 &921348885
 GameObject:
@@ -6389,7 +6399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPointsText: {fileID: 962993075}
-  pointToAddPrefs: 2
+  pointToAddPrefs: 1
   inputField: {fileID: 199722817}
 --- !u!1 &1004608256
 GameObject:
@@ -6658,7 +6668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1088920456}
-  id: player3
+  id: Player2
 --- !u!1 &1208871014
 GameObject:
   m_ObjectHideFlags: 0
@@ -8390,7 +8400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPointsText: {fileID: 510993744}
-  pointToAddPrefs: 4
+  pointToAddPrefs: 3
   inputField: {fileID: 562109121}
 --- !u!1 &1536887943
 GameObject:
@@ -9551,7 +9561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1694698489}
-  id: player4
+  id: Player3
 --- !u!1 &1701318907
 GameObject:
   m_ObjectHideFlags: 0
@@ -11351,7 +11361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1945737130}
-  id: player2
+  id: Player1
 --- !u!1 &2056536934
 GameObject:
   m_ObjectHideFlags: 0
